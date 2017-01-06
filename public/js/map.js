@@ -36,7 +36,8 @@ function initialize() {
           title : title,
           objet : objet,
           lng : lng,
-          lat : lat
+          lat : lat,
+          mydate : Date.now()
         }
 
         firebase.database().ref("token").push(data);
